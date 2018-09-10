@@ -1,0 +1,189 @@
+[
+    {
+        "name": "deanblackborough/php-quill-renderer",
+        "version": "v1.01.1",
+        "version_normalized": "1.01.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/deanblackborough/php-quill-renderer.git",
+            "reference": "dd3fcade9987e94182e9faec2aa1ac3628338885"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/deanblackborough/php-quill-renderer/zipball/dd3fcade9987e94182e9faec2aa1ac3628338885",
+            "reference": "dd3fcade9987e94182e9faec2aa1ac3628338885",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2017-09-11T14:00:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "DBlackborough\\Quill\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dean Blackborough",
+                "email": "dean@g3d-development.com"
+            }
+        ],
+        "description": "Render quill insert deltas to HTML and soon markdown",
+        "homepage": "https://github.com/deanblackborough/php-quill-renderer",
+        "keywords": [
+            "delta",
+            "html",
+            "parse",
+            "quill",
+            "quilljs",
+            "renderer"
+        ]
+    },
+    {
+        "name": "league/commonmark",
+        "version": "0.17.5",
+        "version_normalized": "0.17.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/commonmark.git",
+            "reference": "82d7ab62d7f68391cb9d323f3ccce50be24a5369"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/82d7ab62d7f68391cb9d323f3ccce50be24a5369",
+            "reference": "82d7ab62d7f68391cb9d323f3ccce50be24a5369",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=5.6.5"
+        },
+        "replace": {
+            "colinodell/commonmark-php": "*"
+        },
+        "require-dev": {
+            "cebe/markdown": "~1.0",
+            "commonmark/commonmark.js": "0.28",
+            "erusev/parsedown": "~1.0",
+            "michelf/php-markdown": "~1.4",
+            "mikehaertl/php-shellcommand": "^1.2",
+            "phpunit/phpunit": "^5.7|^6.5",
+            "scrutinizer/ocular": "^1.1",
+            "symfony/finder": "^3.0|^4.0"
+        },
+        "suggest": {
+            "league/commonmark-extras": "Library of useful extensions including smart punctuation"
+        },
+        "time": "2018-03-29T14:35:19+00:00",
+        "bin": [
+            "bin/commonmark"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.18-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\CommonMark\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Colin O'Dell",
+                "email": "colinodell@gmail.com",
+                "homepage": "https://www.colinodell.com",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "Markdown parser for PHP based on the CommonMark spec",
+        "homepage": "https://github.com/thephpleague/commonmark",
+        "keywords": [
+            "commonmark",
+            "markdown",
+            "parser"
+        ]
+    },
+    {
+        "name": "league/html-to-markdown",
+        "version": "4.7.0",
+        "version_normalized": "4.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/html-to-markdown.git",
+            "reference": "76c076483cef89860d32a3fd25312f5a42848a8c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/76c076483cef89860d32a3fd25312f5a42848a8c",
+            "reference": "76c076483cef89860d32a3fd25312f5a42848a8c",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-xml": "*",
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "mikehaertl/php-shellcommand": "~1.1.0",
+            "phpunit/phpunit": "4.*",
+            "scrutinizer/ocular": "~1.1"
+        },
+        "time": "2018-05-19T23:47:12+00:00",
+        "bin": [
+            "bin/html-to-markdown"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\HTMLToMarkdown\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Colin O'Dell",
+                "email": "colinodell@gmail.com",
+                "homepage": "http://www.colinodell.com",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Nick Cernis",
+                "email": "nick@cern.is",
+                "homepage": "http://modernnerd.net",
+                "role": "Original Author"
+            }
+        ],
+        "description": "An HTML-to-markdown conversion helper for PHP",
+        "homepage": "https://github.com/thephpleague/html-to-markdown",
+        "keywords": [
+            "html",
+            "markdown"
+        ]
+    }
+]

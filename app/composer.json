@@ -1,0 +1,7 @@
+{
+    "require": {
+        "deanblackborough/php-quill-renderer": "^1.01",
+        "league/html-to-markdown": "^4.7",
+        "league/commonmark": "^0.17.5"
+    }
+}

@@ -1,0 +1,223 @@
+table{
+	font-family: 'Nunito', sans-serif;
+
+	thead {
+		tr{
+			background-color: #F7F7F7;
+
+			th{
+				text-transform: uppercase;
+				font-size: 14px !important;
+				font-weight: 600;
+				color: #444;
+				border-bottom: none !important;
+			}
+		}
+
+		.disabled{
+			display: none;
+		}
+	}
+
+	tbody {
+		tr{
+			box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+
+			&:hover{
+				background-color: #fff !important;
+				box-shadow: inset 1px 0 0 #dadce0,inset -1px 0 0 #dadce0,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+			}
+
+			td{
+				padding-top: 1.5rem !important;
+				padding-bottom: 1.5rem !important;
+				font-size: 14px;
+				vertical-align: top !important;
+				border-top: none !important;
+
+				&.task-id{
+					color: #888;
+				}
+
+				&.task-status{
+					color: #888;
+				}
+				&.task-actions-col{
+
+					i{
+						margin-left: .5em;
+						font-size: 115%;
+						color: #AAA;
+						padding: .5em .65em;
+						border: 1px solid transparent;
+						border-radius: 8px;
+
+						
+					}
+				}
+				&.task-name .nameString{
+					font-size: 16px;
+					margin-bottom: 5px;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* A classer
+*
+*
+*
+*/
+
+table{
+	.secondary-hint{
+		display: block;
+		font-size: 12px;
+		color: #AAA;
+	}
+}
+
+
+/* Tablesorter tâches
+*
+*
+*
+*/
+
+/* rows hidden by filtering (needed for child rows) */
+.tablesorter .filtered {
+    display: none;
+}
+
+table{
+	thead{
+		tr{
+			&.tablesorter-headerRow{
+				th{
+					padding-top: 1rem !important;
+					padding-bottom: .75rem !important;
+				}
+			}
+			&.tablesorter-filter-row{
+				td{
+					border-top: none;
+					padding-top: 0 !important;
+					padding-bottom: 1rem !important;
+				}
+			}
+		}
+	}
+	tbody{
+		tr{
+			&.task{
+				td{
+					&.task-status{
+						padding-left:1rem !important;
+
+						span.statusPatch{
+							padding: .1em .6em;
+							font-size: 12px;
+							font-weight: 600;
+							border-radius: 5px;
+							border: 1px solid #888;
+							color: #888;
+							font-family: 'Roboto', sans-serif;
+							display: inline-block;
+							margin-bottom: .5em;
+							&.status-erreur{
+								color: #e35f5f;
+								background-color: #FBDADA;
+							}
+							&.status-nonOuvert{
+								color: #3a7c9f;
+								background-color: #DFF0FE;
+							}
+
+							&.status-terminee{
+								color: #3688b4;
+								border-color: #3683ad;
+							}
+							
+							// VERT 
+							&.status-vert{
+								color: #36b464;
+								border-color: #379f5c;
+							}
+
+							&.currentUserAssigned{
+								color: #FDFDFD;
+								background-color: #888;
+							}
+						}
+						span.secondary-hint{
+							i{
+								font-size: 85%;
+								margin-right: .25em;
+							}
+						}
+						span.discussion-status-hint{
+							font-size: 80%;
+							margin-top: .5rem;
+							margin-left: .25rem;
+							color: #3a7c9f;
+							display: block;
+							i{
+								font-size: 85%;
+								margin-right: .25em;
+							}
+						}
+					}
+					.action-links{
+						opacity:.3;
+						display: flex;
+						flex-direction: column;
+						font-size: 12px;
+						line-height: 1.75;
+						justify-content: left;
+
+						a{
+							color: #ddd;
+
+							i{
+								font-size: 80%;
+								color: #fff;
+								margin-right: .75em;
+							}
+
+							&.active{
+								color: #033649;
+								i{
+									color: #033649;
+								}
+							}
+						}
+					}
+					&.task-actions-col{
+						display: flex;
+						justify-content: flex-end;
+
+						i{
+							&.fa-caret-down{
+								&:hover{
+									border: 1px solid #DEDEDE;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+
+				&:hover {
+					span.action-links{
+						opacity: 1;
+					}
+				}
+
+			}
+		}
+	}
+}
